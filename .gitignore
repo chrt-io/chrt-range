@@ -1,0 +1,8 @@
+# Depencendies
+node_modules
+
+# Builds
+dist
+
+# Tests
+coverage
