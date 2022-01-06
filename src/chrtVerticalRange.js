@@ -1,5 +1,5 @@
 import chrtRange from './chrtRange';
-import { utils } from 'chrt-object';
+import { utils, cssDisplay } from 'chrt-object';
 const { isNull, createSVG: create } = utils;
 
 function chrtVerticalRange() {
@@ -17,6 +17,7 @@ function chrtVerticalRange() {
       // this.g.setAttribute('data-id', this._id);
       this.g.setAttribute('data-name', `${this.parentNode.type}-range`);
     }
+    cssDisplay.call(this, this.attr('display')());
 
     this.g.setAttribute('id', `${name}${this.parentNode.type}Range-${this.id()}`);
     this.g.classList.remove(...this.g.classList)
