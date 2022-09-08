@@ -23,7 +23,7 @@ function chrtHorizontalRange() {
     }
     cssDisplay.call(this, this.attr('display')());
 
-    this.g.setAttribute('id', `${name}${this.parentNode.type}Range-${this.id()}`);
+    this.g.setAttribute('id', `${this.parentNode.type}Range-${this.id()}`);
     this.g.classList.remove(...this.g.classList)
     this.g.classList.add(...this._classNames);
 
