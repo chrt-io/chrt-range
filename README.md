@@ -35,10 +35,10 @@ import Chrt from "chrt-core";
 import { chrtVerticalRange, chrtHorizontalRange } from "chrt-range";
 
 // Create a vertical range
-Chrt().add(chrtVerticalRange().from(10).to(20));
+chrt.Chrt().add(chrtVerticalRange().from(10).to(20));
 
 // Create a horizontal threshold line
-Chrt().add(
+chrt.Chrt().add(
   chrtHorizontalRange().from(50).to(50), // same as from to create a line
 );
 ```
@@ -117,21 +117,23 @@ chrtVerticalRange().fillOpacity(0.3).strokeOpacity(0.8);
 #### Basic Range
 
 ```js
-Chrt().add(
-  chrtVerticalRange()
-    .from(-2)
-    .to(1)
-    .stroke("#f00")
-    .strokeWidth(2)
-    .fill("#336699")
-    .fillOpacity(0.5),
-);
+chrt
+  .Chrt()
+  .add(
+    chrtVerticalRange()
+      .from(-2)
+      .to(1)
+      .stroke("#f00")
+      .strokeWidth(2)
+      .fill("#336699")
+      .fillOpacity(0.5),
+  );
 ```
 
 #### Threshold Lines
 
 ```js
-Chrt().add(
+chrt.Chrt().add(
   chrtHorizontalRange()
     .from(100) // threshold value
     .to(100) // same as from
@@ -144,7 +146,8 @@ Chrt().add(
 #### Multiple Ranges
 
 ```js
-Chrt()
+chrt
+  .Chrt()
   .add(chrtVerticalRange().from(dateStart).to(dateEnd).fill("#eee"))
   .add(
     chrtHorizontalRange()
@@ -158,7 +161,8 @@ Chrt()
 #### Ranges with Time Series
 
 ```js
-Chrt()
+chrt
+  .Chrt()
   .x({ scale: "time" })
   .add(
     chrtVerticalRange()
