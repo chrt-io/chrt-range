@@ -2,6 +2,8 @@
 
 Component for creating ranges and threshold lines in chrt charts. Ranges can be used to highlight specific intervals of values, while single-value ranges create threshold lines (also known as AB lines). The component supports both vertical and horizontal orientations.
 
+![Example of ranges and threshold lines in chrt](chrt-range.png)
+
 The component provides two main types:
 
 - `chrtVerticalRange`: Creates vertical ranges/lines (along the x-axis)
