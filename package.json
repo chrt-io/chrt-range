@@ -79,7 +79,6 @@
   },
   "files": [
     "dist/**/*.js",
-    "src/**/*.js",
-    "chrt-range.png"
+    "src/**/*.js"
   ]
 }
