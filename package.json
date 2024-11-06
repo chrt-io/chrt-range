@@ -43,7 +43,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/chrt/chrt-range.git"
+    "url": "git+ssh://git@github.com/chrt-io/chrt-range.git"
   },
   "author": "chrt",
   "license": "MIT",
@@ -79,6 +79,7 @@
   },
   "files": [
     "dist/**/*.js",
-    "src/**/*.js"
+    "src/**/*.js",
+    "chrt-range.png"
   ]
 }
